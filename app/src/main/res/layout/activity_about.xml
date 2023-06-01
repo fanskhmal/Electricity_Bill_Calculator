@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <!-- Logo of the app -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="App Logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="Electricity Bill Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Copyright -->
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:text="© 20227566555"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Developer details -->
+    <TextView
+        android:id="@+id/developerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Developer Name: Ahmad Fansuri Akhmal bin Masri"
+        android:textSize="14sp" />
+
+    <!-- Application Website -->
+    <LinearLayout
+        android:id="@+id/websiteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/developerDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/applicationWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Website: https://github.com/fanskhmal"
+            android:textSize="14sp"
+            android:autoLink="web" />
+
+    </LinearLayout>
+
+</RelativeLayout>

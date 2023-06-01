@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Electricity Bills Calculator</string>
+    <string name="calculate_button_text">Calculate</string>
+</resources>
